@@ -1,0 +1,24 @@
+.grid-item {
+  display: grid;
+  border: 2px dotted rebeccapurple;
+  text-align: center;
+  font-size: 2rem;
+  color: salmon;
+}
+
+.grid {
+  display: grid;
+  border: 0.1rem dotted rgb(235, 119, 11);
+  height: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-gap: 2rem;
+}
+.grid + .grid {
+  margin-top: 2rem;
+}
+
+.grid-wrap {
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

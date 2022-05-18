@@ -1,0 +1,26 @@
+.grid-item {
+    display: grid;
+    border: 2px dotted rebeccapurple;
+    text-align: center;
+    font-size: 2rem;
+    color: salmon;
+}
+
+$minWidth: 5rem;
+$gridGap: 2rem;
+.grid {
+    display: grid;
+    border: .1rem dotted rgb(235, 119, 11);
+    height: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax($minWidth, 1fr));
+    grid-gap: $gridGap;
+
+    & + .grid {
+        margin-top: $gridGap;
+    
+    }
+}
+
+.grid-wrap {
+    padding: $gridGap;
+}
